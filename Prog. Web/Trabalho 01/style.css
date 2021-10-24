@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	font-family:"Lucida Console", "Courier New", monospace;
+	font-size: 1em;
+	color: #333333;
+}
+
+body {
+	width: 790px;
+	margin: 0 auto;
+	background: #c9c4ac;
+}
+
+h2 {
+	font-size: 1.0em;
+	color: #8b7e67;
+}
+
+h1 {
+	color: #c9c4ac;
+	text-align: center;
+}
+
+p {
+	font-size: 0.8em;
+}
+
+label,select,input {
+	font-size: 0.8em;
+	border: 2px;
+	border-radius:12px;
+}
+
+em {
+	font-weight: bold;
+	font-style: normal;
+	color: #3a3728;
+}
+
+strong {	
+	padding-left: 15px;
+	color: #333333;
+}
+
+#header a img {
+	border: none;
+}
+
+#fundo {
+	background: #867a63;
+	border-radius:12px;
+}
+
+#menu {
+	height: 30px;
+	background: #867a63;
+	border-radius:12px;
+	padding:10px;
+}
+
+#menu li {
+	float: left;
+	list-style-type: none;
+	padding-top: 10px;
+	padding-left: 10px;
+	color: #666666;
+}
+
+#menu li a:link, #menu li a:visited {
+	color: #e4dfcb;
+	font-size: 1.1em;
+	padding: 5px 43px 0 43px;
+	font-weight: bold;
+}
+
+#sobre {
+	background: url(images/robo2.png) top right no-repeat;
+	background-size: 310px;
+	background-color:  #e4dfcb ;
+}
+
+#sobre h2, #sobre p {
+	padding-top: 20px;
+	padding-right: 100px;
+	padding-left: 20px;
+}
+
+#sobre p {
+	width: 500px;
+}
+
+#espaco {
+	height: 20px;
+	background:#e4dfcb;
+}
+
+#content {
+	padding: 20px 0;	
+}
+
+#vertical_barr {
+	border-left:  #867a63 solid 2px;
+	border-right:  #867a63 solid 2px;
+}
+
+
+#content div {
+	float:left;
+	width: 215px;
+	padding: 0 10px 0 30px;
+}
+
+#content div p {
+	padding-top: 10px;
+}
+
+#content div ul {
+	font-size: 0.8em;
+	margin-left: 20px;
+}
+
+#content div li {
+	padding: 8px 0 0 0;
+}

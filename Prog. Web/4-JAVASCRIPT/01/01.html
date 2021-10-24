@@ -1,0 +1,63 @@
+<!-- Crie uma página HTML com uma estrutura padrão (Doctype, Html, Head,
+Body..)
+➢ No HEAD insira um script (Javascript) com as seguintes instruções:
+➢ Crie 4 variáveis com os seguintes nomes e valores: v_1 = 5, v_2 = 25, v_3
+= “5” e v_4 = “25a” (pode nomear da forma como desejar )
+➢ Crie 4 novas variáveis com os seguintes nomes: “valor_final_1”,
+“valor_final_2”, “valor_final_3” e “valor_final_4”.
+➢ Na variável “valor_final_1” atribua a operação v_1 vezes v_3.
+➢ Na variável “valor_final_2” atribua a operação v_2 dividido por v_3.
+➢ Na variável “valor_final_3” atribua a operação v_2 + v_3.
+➢ Na variável “valor_final_4” atribua a operação v_3 + v_4.
+➢ Por fim, em um único alert box, apresente todos os resultados (para
+quebra de linha utilize “\n”) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<h2>EXE 1-JAVA SCRIPT</h2>
+<p id="demo"></p>
+<script>
+    var v_1 = 5;
+    var v_2 = 25;
+    var v_3 = '5';
+    var v_4 = '25a';
+    
+    var valor_final_1;
+    var valor_final_2;
+    var valor_final_3;
+    var valor_final_4;
+    
+    valor_final_1 = v_1 * v_3;
+    valor_final_2 = v_2 / v_3;
+    valor_final_3 = v_2 + v_3;
+    valor_final_4 = v_3 + v_4;
+
+    //mostrando no corpo
+    document.getElementById("demo").innerHTML =
+    Object.keys({valor_final_1})[0]+ " é: "+ valor_final_1 
+    +"<br>"+
+    Object.keys({valor_final_2})[0]+ " é: "+ valor_final_2
+    +"<br>"+
+    Object.keys({valor_final_3})[0]+ " é: "+ valor_final_3
+    +"<br>"+
+    Object.keys({valor_final_4})[0]+ " é: "+ valor_final_4
+    ;
+    // mostrando por caixa
+    window.alert(
+    Object.keys({valor_final_1})[0]+ " é: "+ valor_final_1 
+    +"\n"+
+    Object.keys({valor_final_2})[0]+ " é: "+ valor_final_2
+    +"\n"+
+    Object.keys({valor_final_3})[0]+ " é: "+ valor_final_3
+    +"\n"+
+    Object.keys({valor_final_4})[0]+ " é: "+ valor_final_4
+    );
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Atividade 09</h2>
+
+<form action="https://www.w3schools.com/action_page.php" target="_blank">
+  <label for="cpf">CPF:</label><br>
+  <input type="number" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx"><br><br>
+
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome"><br><br>
+
+  <label for="endereco">Endereço:</label><br>
+  <input type="text" id="endereco" name="endereco"><br><br>
+
+  <label for="telefone">Telefone:</label><br>
+  <input type="number" id="telefone" name="telefone" placeholder="(xx) x xxxx-xxxx"><br><br>
+
+  <p>Sexo:</p>
+  <input type="radio" id="masculino" name="sexo" value="masculino">
+  <label for="masculino">Masculino</label>
+  
+  <input type="radio" id="feminino" name="sexo" value="feminino">
+  <label for="feminino">Feminino</label><br><br>
+
+  <p>Titulação:</p>
+  <input type="checkbox" id="veiculo1" name="veiculo1" value="Carro">
+  <label for="veiculo1"> Eu Tenho Carro</label><br>
+
+  <input type="checkbox" id="veiculo2" name="veiculo2" value="Jumento">
+  <label for="veiculo2"> Eu Tenho Jumento</label><br>
+
+  <input type="checkbox" id="veiculo3" name="veiculo3" value="Jetsky">
+  <label for="veiculo3"> Eu Tenho Jetsky</label><br><br>
+
+  <p>Profissão:</p>
+  <label for="proficao">Escolha a Sua Profissão:</label>
+  <select id="proficao" name="proficao">
+    <option value="autonomo">Autonomo</option>
+    <option value="vagabs">Vagabs</option>
+    <option value="estudante">Estudante</option>
+    <option value="clt">CLT</option>
+  </select><br><br>
+
+  <p>Naturalidade:</p>
+  <input list="naturalidade" name="naturalidade">
+  <datalist id="naturalidade">
+    <option value="Fortaleza">
+    <option value="Pacajus">
+    <option value="Choró Limão">
+  </datalist><br><br>
+
+  <p>Nacionalidade:</p>
+  <input list="nacionalidade" name="nacionalidade">
+  <datalist id="nacionalidade">
+    <option value="Brasileiro">
+    <option value="Cearense">
+    <option value="Outros">
+  </datalist><br><br>
+
+  <input type="submit" value="Gravar">
+
+
+</form> 
+
+</body>
+</html>
