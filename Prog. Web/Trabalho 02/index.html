@@ -1,116 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
+
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css" />
+    <title>Financiamentos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css" />
 </head>
+
 <body>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-<div class="container">
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+            <!-- caixinhas -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner01.png" width="1200" height="500">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="ny.jpg" alt="New York" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>The atmosphere in New York is lorem ipsum.</p>
-        </div>      
-      </div>
+                <div class="item">
+                    <img src="images/banner03.jpg" alt="Chicago" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>Saia do Vermelho</h3>
+                        <p>As Melhores Taxas do mercado.</p>
+                    </div>
+                </div>
 
-      <div class="item">
-        <img src="chicago.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p>
-        </div>      
-      </div>
-    
-      <div class="item">
-        <img src="la.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
-        </div>      
-      </div>
+                <div class="item">
+                    <img src="images/banner02.jpg" alt="Los Angeles" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>Financie Já</h3>
+                        <p>Faça sua simulação e Realize seu Sonho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="index.html">Dados Cadastrais</a></li>
+            <li><a href="propriedades.html">Propriedades</a></li>
+            <li><a href="vinculos.html">Vínculos</a></li>
+        </ul>
+        <form>
+            <br>
+            <h2>Dados Cadastrais</h2>
+            <br>
+            <div class="form-group">
+                <label for='nome'>Nome:</label> <input type="text" class="form-control" id="nome" name="nome">
+                <label for="cpf">CPF:</label> <input type="number" class="form-control" name="cpf"
+                    placeholder="xxx.xxx.xxx-xx" maxlength="11">
+                <label for='Identidade'>Identidade</label> <input type='text' class='form-control' id='Identidade'
+                    name='Identidade'>
+                <label for='Sexo'>Sexo</label> <input type='text' class='form-control' id='Sexo' name='Sexo'>
+                <label for='DatadeNascimento'>Data de Nascimento</label> <input type='date' class='form-control'
+                    id='Data de Nascimento' name='Data de Nascimento'>
+                <label for='NomedoPai'>Nome do Pai</label> <input type='text' class='form-control' id='Nome do Pai'
+                    name='Nome do Pai'>
+                <label for='NomedaMãe'>Nome da Mãe</label> <input type='text' class='form-control' id='Nome da Mãe'
+                    name='Nome da Mãe'>
+                <label for='Estadocivil'>Estado civil</label> <input type='text' class='form-control' id='Estado civil'
+                    name='Estado civil'>
+                <label for='Naturalidade'>Naturalidade</label> <input type='text' class='form-control' id='Naturalidade'
+                    name='Naturalidade'>
+                <label for='Nacionalidade'>Nacionalidade</label> <input type='text' class='form-control'
+                    id='Nacionalidade' name='Nacionalidade'>
+                <label for='TelefoneResidencial'>Telefone Residencial</label> <input type='number' class='form-control'
+                    id='Telefone Residencial' name='Telefone Residencial'>
+                <label for='TelefoneCelular'>Telefone Celular</label> <input type='number' class='form-control'
+                    id='Telefone Celular' name='Telefone Celular'>
+                <label for='Logradouro'>Logradouro</label> <input type='text' class='form-control' id='Logradouro'
+                    name='Logradouro'>
+                <label for='Número'>Número</label> <input type='number' class='form-control' id='Número' name='Número'>
+                <label for='Complemento'>Complemento</label> <input type='text' class='form-control' id='Complemento'
+                    name='Complemento'>
+                <label for='CEP'>CEP</label> <input type='number' class='form-control' id='CEP' name='CEP'>
+                <label for='Bairro'>Bairro</label> <input type='text' class='form-control' id='Bairro' name='Bairro'>
+                <label for='Cidade'>Cidade</label> <input type='text' class='form-control' id='Cidade' name='Cidade'>
+                <label for='Estado'>Estado</label> <input type='text' class='form-control' id='Estado' name='Estado'>
+                <label for='País'>País</label> <input type='text' class='form-control' id='País' name='País'>
+
+            </div>
+            <button type="submit" class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
+        </form>
+        </ul>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-<br>
-<ul class="nav nav-tabs">
-    <li class="active"><a href="index.html">Dados Cadastrais</a></li>
-    <li><a href="propriedades.html">Propriedades</a></li>
-    <li><a href="vinculos.html">Vínculos</a></li>
-</ul>
-  <form>
-      <br>
-    <h2>Dados Cadastrais</h2>
-    <div class="form-group">
-    <label for='nome'>Nome:</label> <input type="text" class="form-control" id="nome" name="nome">
-    <label for="cpf">CPF:</label> <input type="number" class="form-control" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="11">
-    <label for='Identidade'>Identidade</label>	<input type='text' class='form-control' id='Identidade' name='Identidade'>
-    <label for='Sexo'>Sexo</label>	<input type='text' class='form-control' id='Sexo' name='Sexo'>
-    <label for='DatadeNascimento'>Data de Nascimento</label>	<input type='date' class='form-control' id='Data de Nascimento' name='Data de Nascimento'>
-    <label for='NomedoPai'>Nome do Pai</label>	<input type='text' class='form-control' id='Nome do Pai' name='Nome do Pai'>
-    <label for='NomedaMãe'>Nome da Mãe</label>	<input type='text' class='form-control' id='Nome da Mãe' name='Nome da Mãe'>
-    <label for='Estadocivil'>Estado civil</label>	<input type='text' class='form-control' id='Estado civil' name='Estado civil'>
-    <label for='Naturalidade'>Naturalidade</label>	<input type='text' class='form-control' id='Naturalidade' name='Naturalidade'>
-    <label for='Nacionalidade'>Nacionalidade</label>	<input type='text' class='form-control' id='Nacionalidade' name='Nacionalidade'>
-    <label for='TelefoneResidencial'>Telefone Residencial</label>	<input type='number' class='form-control' id='Telefone Residencial' name='Telefone Residencial'>
-    <label for='TelefoneCelular'>Telefone Celular</label>	<input type='number' class='form-control' id='Telefone Celular' name='Telefone Celular'>
-    <label for='Logradouro'>Logradouro</label>	<input type='text' class='form-control' id='Logradouro' name='Logradouro'>
-    <label for='Número'>Número</label>	<input type='number' class='form-control' id='Número' name='Número'>
-    <label for='Complemento'>Complemento</label>	<input type='text' class='form-control' id='Complemento' name='Complemento'>
-    <label for='CEP'>CEP</label>	<input type='number' class='form-control' id='CEP' name='CEP'>
-    <label for='Bairro'>Bairro</label>	<input type='text' class='form-control' id='Bairro' name='Bairro'>
-    <label for='Cidade'>Cidade</label>	<input type='text' class='form-control' id='Cidade' name='Cidade'>
-    <label for='Estado'>Estado</label>	<input type='text' class='form-control' id='Estado' name='Estado'>
-    <label for='País'>País</label>	<input type='text' class='form-control' id='País' name='País'>
+    <div id="resultado">
 
     </div>
-    <input type="submit" value="Gravar">
-    <button type="submit" class="btn btn-default" onclick="loadDoc()">Submit</button>
-  </form>
-</ul>
-</div>
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("resultado").innerHTML = this.responseText;
+            }
+            var email = document.getElementById("email").value;
 
-<div id="resultado">
-
-</div>
-<script>
-    function loadDoc(){
-        const xhttp =  new XMLHttpRequest();
-        xhttp.onload = function(){
-            document.getElementById("resultado").innerHTML = this.responseText;
-        } 
-        var email = document.getElementById("email").value;
-
-        var parametros = "email =" + email;
-        xhttp.open("GET","demo_get.asp"+ parametros, true);
-        xhttp.send();
-    }
-</script>
+            var parametros = "email =" + email;
+            xhttp.open("GET", "demo_get.asp" + parametros, true);
+            xhttp.send();
+        }
+    </script>
 
 </body>
+
 </html>

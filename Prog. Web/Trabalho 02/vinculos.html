@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <title>Financiamentos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" media="screen" type="text/css" title="style" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- caixinhas -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/banner01.png" width="1200" height="500">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/banner03.jpg" alt="Chicago" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>Saia do Vermelho</h3>
+                        <p>As Melhores Taxas do mercado.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/banner02.jpg" alt="Los Angeles" width="1200" height="500">
+                    <div class="carousel-caption">
+                        <h3>Financie Já</h3>
+                        <p>Faça sua simulação e Realize seu Sonho.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+        <ul class="nav nav-tabs">
+            <li><a href="index.html">Dados Cadastrais</a></li>
+            <li class="active"><a href="propriedades.html">Propriedades</a></li>
+            <li><a href="vinculos.html">Vínculos</a></li>
+        </ul>
+        <form>
+            <div class="form-group">
+                <br>
+                <h2>Ultimo Emprego</h2>
+                <br>
+                <label for='CNPJ'>CNPJ</label> <input type='text' class='form-control' id='CNPJ' name='CNPJ'>
+                <label for='RazãoSocial'>Razão Social</label> <input type='text' class='form-control' id='Razão Social'
+                    name='Razão Social'>
+                <label for='Ocupação'>Ocupação</label> <input type='text' class='form-control' id='Ocupação'
+                    name='Ocupação'>
+                <label for='QuantidadeHoras'>Quantidade Horas</label> <input type='number' class='form-control'
+                    id='Quantidade Horas' name='Quantidade Horas'>
+                <label for='DataAdmissão'>Data Admissão</label> <input type='date' class='form-control'
+                    id='Data Admissão' name='Data Admissão'>
+                <label for='DataDesligamento'>Data Desligamento</label> <input type='date' class='form-control'
+                    id='Data Desligamento' name='Data Desligamento'>
+                <label for='SalárioBruto'>Salário Bruto</label> <input type='number' class='form-control'
+                    id='Salário Bruto' name='Salário Bruto'>
+                <label for='SalárioLíquido'>Salário Líquido</label> <input type='number' class='form-control'
+                    id='Salário Líquido' name='Salário Líquido'>
+                <br>
+                <h2>Participação Societária</h2>
+                <br>
+                <label for='CNPJ'>CNPJ</label> <input type='number' class='form-control' id='CNPJ' name='CNPJ'>
+                <label for='QualificaçãoSócio'>Qualificação Sócio</label> <input type='text' class='form-control'
+                    id='Qualificação Sócio' name='Qualificação Sócio'>
+                <label for='DataEntradaSociedade'>Data Entrada Sociedade</label> <input type='date' class='form-control'
+                    id='Data Entrada Sociedade' name='Data Entrada Sociedade'>
+                <label for='DataSaídaSociedade'>Data Saída Sociedade</label> <input type='date' class='form-control'
+                    id='Data Saída Sociedade' name='Data Saída Sociedade'>
+                <label for='Capital'>Capital</label> <input type='text' class='form-control' id='Capital'
+                    name='Capital'>
+            </div>
+            <button type="submit" class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
+    </div>
+    </form>
+    </ul>
+    </div>
+
+    <div id="resultado">
+
+    </div>
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.getElementById("resultado").innerHTML = this.responseText;
+            }
+            var email = document.getElementById("email").value;
+
+            var parametros = "email =" + email;
+            xhttp.open("GET", "demo_get.asp" + parametros, true);
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>
