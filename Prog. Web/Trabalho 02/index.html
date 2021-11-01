@@ -24,13 +24,13 @@
             <!-- caixinhas -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="images/banner01.png" width="1200" height="500">
+                    <img src="images/banner01.png" class="img-rounded" width="1200" height="500">
                     <div class="carousel-caption">
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="images/banner03.jpg" alt="Chicago" width="1200" height="500">
+                    <img src="images/banner03.jpg" class="img-rounded" width="1200" height="500">
                     <div class="carousel-caption">
                         <h3>Saia do Vermelho</h3>
                         <p>As Melhores Taxas do mercado.</p>
@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="item">
-                    <img src="images/banner02.jpg" alt="Los Angeles" width="1200" height="500">
+                    <img src="images/banner02.jpg" class="img-rounded" width="1200" height="500">
                     <div class="carousel-caption">
                         <h3>Financie Já</h3>
                         <p>Faça sua simulação e Realize seu Sonho.</p>
@@ -115,10 +115,10 @@
             xhttp.onload = function () {
                 document.getElementById("resultado").innerHTML = this.responseText;
             }
-            var email = document.getElementById("email").value;
+            var nome = document.getElementById("nome").value;
 
-            var parametros = "email =" + email;
-            xhttp.open("GET", "demo_get.asp" + parametros, true);
+            var parametros = "nome =" + nome;
+            xhttp.open("GET","https://www.w3schools.com/action_page.php"+ parametros, true);
             xhttp.send();
         }
     </script>

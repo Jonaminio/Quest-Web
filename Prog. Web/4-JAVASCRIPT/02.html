@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="conteudo_1"></p>
+
+<script>
+
+var pessoa ={
+    nome: "Jonas",
+    idade: 16,
+    sexo: "m"
+};
+
+function func_dados_aluno(){
+    return pessoa.nome + "" + pessoa.idade+ "" + pessoa.sexo;
+}
+
+// mostrando na tela
+document.getElementById("conteudo_1").innerHTML = func_dados_aluno();
+</script>
+
+</body>
+</html>
