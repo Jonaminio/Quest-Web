@@ -62,38 +62,38 @@
             <li class="active"><a href="propriedades.html">Propriedades</a></li>
             <li><a href="vinculos.html">Vínculos</a></li>
         </ul>
-        <form>
-            <div class="form-group">
-                <br>
-                <h2>Veículo</h2>
-                <br>
-                <label for='Marca'>Marca</label> <input type='text' class='form-control' id='Marca' name='Marca'>
-                <label for='Modelo'>Modelo</label> <input type='text' class='form-control' id='Modelo' name='Modelo'>
-                <label for='Tipo'>Tipo</label> <input type='text' class='form-control' id='Tipo' name='Tipo'>
-                <label for='Placa'>Placa</label> <input type='text' class='form-control' id='Placa' name='Placa'>
-                <h2>Imóvel</h2>
-                <br>
-                <label for='Número'>Número</label> <input type='text' class='form-control' id='Número' name='Número'>
-                <label for='Complemento'>Complemento</label> <input type='text' class='form-control' id='Complemento'
-                    name='Complemento'>
-                <label for='CEP'>CEP</label> <input type='text' class='form-control' id='CEP' name='CEP'>
-                <label for='Bairro'>Bairro</label> <input type='text' class='form-control' id='Bairro' name='Bairro'>
-                <label for='Cidade'>Cidade</label> <input type='text' class='form-control' id='Cidade' name='Cidade'>
-                <label for='Estado'>Estado</label> <input type='text' class='form-control' id='Estado' name='Estado'>
-                <label for='País'>País</label> <input type='text' class='form-control' id='País' name='País'>
-                <h2>Conta Bancária</h2>
-                <br>
-                <label for='Banco'>Banco</label> <input type='number' class='form-control' id='Banco' name='Banco'>
-                <label for='Agência'>Agência</label> <input type='number' class='form-control' id='Agência'
-                    name='Agência'>
-                <label for='Operação'>Operação</label> <input type='text' class='form-control' id='Operação'
-                    name='Operação'>
-                <label for='Número'>Número</label> <input type='number' class='form-control' id='Número' name='Número'>
-                <label for='Tipo'>Tipo</label> <input type='text' class='form-control' id='Tipo' name='Tipo'>
-            </div>
-            <button type="submit" class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
+
+        <div class="form-group">
+            <br>
+            <h2>Veículo</h2>
+            <br>
+            <label for='Marca'>Marca</label> <input type='text' class='form-control' id='Marca' name='Marca'>
+            <label for='Modelo'>Modelo</label> <input type='text' class='form-control' id='Modelo' name='Modelo'>
+            <label for='Tipo'>Tipo</label> <input type='text' class='form-control' id='Tipo' name='Tipo'>
+            <label for='Placa'>Placa</label> <input type='text' class='form-control' id='Placa' name='Placa'>
+            <h2>Imóvel</h2>
+            <br>
+            <label for='Logradouro'>Logradouro</label> <input type='text' class='form-control' id='Logradouro'
+                name='Logradouro'>
+            <label for='Número'>Número</label> <input type='number' class='form-control' id='Número' name='Número'>
+            <label for='Complemento'>Complemento</label> <input type='text' class='form-control' id='Complemento'
+                name='Complemento'>
+            <label for='CEP'>CEP</label> <input type='number' class='form-control' id='CEP' name='CEP'>
+            <label for='Bairro'>Bairro</label> <input type='text' class='form-control' id='Bairro' name='Bairro'>
+            <label for='Cidade'>Cidade</label> <input type='text' class='form-control' id='Cidade' name='Cidade'>
+            <label for='Estado'>Estado</label> <input type='text' class='form-control' id='Estado' name='Estado'>
+            <label for='País'>País</label> <input type='text' class='form-control' id='País' name='País'>
+            <h2>Conta Bancária</h2>
+            <br>
+            <label for='Banco'>Banco</label> <input type='text' class='form-control' id='Banco' name='Banco'>
+            <label for='Agência'>Agência</label> <input type='number' class='form-control' id='Agência' name='Agência'>
+            <label for='Operação'>Operação</label> <input type='text' class='form-control' id='Operação'
+                name='Operação'>
+            <label for='Número'>Número</label> <input type='number' class='form-control' id='Número' name='Número'>
+            <label for='Tipo'>Tipo</label> <input type='text' class='form-control' id='Tipo' name='Tipo'>
+        </div>
+        <button type="submit" class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
     </div>
-    </form>
     </ul>
     </div>
 
@@ -106,10 +106,45 @@
             xhttp.onload = function () {
                 document.getElementById("resultado").innerHTML = this.responseText;
             }
-            var email = document.getElementById("email").value;
+            var Marca = document.getElementById('Marca').value;
+            var Modelo = document.getElementById('Modelo').value;
+            var Tipo = document.getElementById('Tipo').value;
+            var Placa = document.getElementById('Placa').value;
+            var Logradouro = document.getElementById('Logradouro').value;
+            var Número = document.getElementById('Número').value;
+            var Complemento = document.getElementById('Complemento').value;
+            var CEP = document.getElementById('CEP').value;
+            var Bairro = document.getElementById('Bairro').value;
+            var Cidade = document.getElementById('Cidade').value;
+            var Estado = document.getElementById('Estado').value;
+            var País = document.getElementById('País').value;
+            var Banco = document.getElementById('Banco').value;
+            var Agência = document.getElementById('Agência').value;
+            var Operação = document.getElementById('Operação').value;
+            var Número = document.getElementById('Número').value;
+            var Tipo = document.getElementById('Tipo').value;
 
-            var parametros = "email =" + email;
-            xhttp.open("GET", "demo_get.asp" + parametros, true);
+            var parametros = [
+                '?Marca=' + Marca +
+                '?Modelo=' + Modelo +
+                '?Tipo=' + Tipo +
+                '?Placa=' + Placa +
+                '?Logradouro=' + Logradouro +
+                '?Número=' + Número +
+                '?Complemento=' + Complemento +
+                '?CEP=' + CEP +
+                '?Bairro=' + Bairro +
+                '?Cidade=' + Cidade +
+                '?Estado=' + Estado +
+                '?País=' + País +
+                '?Banco=' + Banco +
+                '?Agência=' + Agência +
+                '?Operação=' + Operação +
+                '?Número=' + Número +
+                '?Tipo=' + Tipo
+            ];
+
+            xhttp.open("GET", "https://www.w3schools.com/action_page.php" + parametros, true);
             xhttp.send();
         }
     </script>

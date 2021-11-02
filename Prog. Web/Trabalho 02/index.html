@@ -62,47 +62,46 @@
             <li><a href="propriedades.html">Propriedades</a></li>
             <li><a href="vinculos.html">Vínculos</a></li>
         </ul>
-        <form>
-            <br>
-            <h2>Dados Cadastrais</h2>
-            <br>
-            <div class="form-group">
-                <label for='nome'>Nome:</label> <input type="text" class="form-control" id="nome" name="nome">
-                <label for="cpf">CPF:</label> <input type="number" class="form-control" name="cpf"
-                    placeholder="xxx.xxx.xxx-xx" maxlength="11">
-                <label for='Identidade'>Identidade</label> <input type='text' class='form-control' id='Identidade'
-                    name='Identidade'>
-                <label for='Sexo'>Sexo</label> <input type='text' class='form-control' id='Sexo' name='Sexo'>
-                <label for='DatadeNascimento'>Data de Nascimento</label> <input type='date' class='form-control'
-                    id='Data de Nascimento' name='Data de Nascimento'>
-                <label for='NomedoPai'>Nome do Pai</label> <input type='text' class='form-control' id='Nome do Pai'
-                    name='Nome do Pai'>
-                <label for='NomedaMãe'>Nome da Mãe</label> <input type='text' class='form-control' id='Nome da Mãe'
-                    name='Nome da Mãe'>
-                <label for='Estadocivil'>Estado civil</label> <input type='text' class='form-control' id='Estado civil'
-                    name='Estado civil'>
-                <label for='Naturalidade'>Naturalidade</label> <input type='text' class='form-control' id='Naturalidade'
-                    name='Naturalidade'>
-                <label for='Nacionalidade'>Nacionalidade</label> <input type='text' class='form-control'
-                    id='Nacionalidade' name='Nacionalidade'>
-                <label for='TelefoneResidencial'>Telefone Residencial</label> <input type='number' class='form-control'
-                    id='Telefone Residencial' name='Telefone Residencial'>
-                <label for='TelefoneCelular'>Telefone Celular</label> <input type='number' class='form-control'
-                    id='Telefone Celular' name='Telefone Celular'>
-                <label for='Logradouro'>Logradouro</label> <input type='text' class='form-control' id='Logradouro'
-                    name='Logradouro'>
-                <label for='Número'>Número</label> <input type='number' class='form-control' id='Número' name='Número'>
-                <label for='Complemento'>Complemento</label> <input type='text' class='form-control' id='Complemento'
-                    name='Complemento'>
-                <label for='CEP'>CEP</label> <input type='number' class='form-control' id='CEP' name='CEP'>
-                <label for='Bairro'>Bairro</label> <input type='text' class='form-control' id='Bairro' name='Bairro'>
-                <label for='Cidade'>Cidade</label> <input type='text' class='form-control' id='Cidade' name='Cidade'>
-                <label for='Estado'>Estado</label> <input type='text' class='form-control' id='Estado' name='Estado'>
-                <label for='País'>País</label> <input type='text' class='form-control' id='País' name='País'>
+        <!-- remover o form -->
+        <br>
+        <h2>Dados Cadastrais</h2>
+        <br>
+        <div class="form-group">
+            <label for='Nome'>Nome</label> <input type='text' class='form-control' id='Nome' name='Nome'>
+            <label for='CPF'>CPF</label> <input type='number' class='form-control' id='CPF' name='CPF'>
+            <label for='Identidade'>Identidade</label> <input type='number' class='form-control' id='Identidade'
+                name='Identidade'>
+            <label for='Sexo'>Sexo</label> <input type='text' class='form-control' id='Sexo' name='Sexo'>
+            <label for='DatadeNascimento'>Data de Nascimento</label> <input type='date' class='form-control'
+                id='DatadeNascimento' name='DatadeNascimento'>
+            <label for='NomedoPai'>Nome do Pai</label> <input type='text' class='form-control' id='NomedoPai'
+                name='NomedoPai'>
+            <label for='NomedaMae'>Nome da Mãe</label> <input type='text' class='form-control' id='NomedaMae'
+                name='NomedaMae'>
+            <label for='Estadocivil'>Estado civil</label> <input type='text' class='form-control' id='Estadocivil'
+                name='Estadocivil'>
+            <label for='Naturalidade'>Naturalidade</label> <input type='text' class='form-control' id='Naturalidade'
+                name='Naturalidade'>
+            <label for='Nacionalidade'>Nacionalidade</label> <input type='text' class='form-control' id='Nacionalidade'
+                name='Nacionalidade'>
+            <label for='TelefoneResidencial'>Telefone Residencial</label> <input type='number' class='form-control'
+                id='TelefoneResidencial' name='TelefoneResidencial'>
+            <label for='TelefoneCelular'>Telefone Celular</label> <input type='number' class='form-control'
+                id='TelefoneCelular' name='TelefoneCelular'>
+            <label for='Logradouro'>Logradouro</label> <input type='text' class='form-control' id='Logradouro'
+                name='Logradouro'>
+            <label for='Numero'>Número</label> <input type='number' class='form-control' id='Numero' name='Numero'>
+            <label for='Complemento'>Complemento</label> <input type='text' class='form-control' id='Complemento'
+                name='Complemento'>
+            <label for='CEP'>CEP</label> <input type='number' class='form-control' id='CEP' name='CEP'>
+            <label for='Bairro'>Bairro</label> <input type='text' class='form-control' id='Bairro' name='Bairro'>
+            <label for='Cidade'>Cidade</label> <input type='text' class='form-control' id='Cidade' name='Cidade'>
+            <label for='Estado'>Estado</label> <input type='text' class='form-control' id='Estado' name='Estado'>
+            <label for='Pais'>País</label> <input type='text' class='form-control' id='Pais' name='Pais'>
 
-            </div>
-            <button type="submit" class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
-        </form>
+        </div>
+        <!-- tirar button type submit -->
+        <button class="btn btn-default" onclick="loadDoc()">CADASTRAR</button>
         </ul>
     </div>
 
@@ -115,10 +114,52 @@
             xhttp.onload = function () {
                 document.getElementById("resultado").innerHTML = this.responseText;
             }
-            var nome = document.getElementById("nome").value;
+            //BUSCANDO O VALOR DA VARIAVEL PELO ID
+            var Nome = document.getElementById('Nome').value;
+            var CPF = document.getElementById('CPF').value;
+            var Identidade = document.getElementById('Identidade').value;
+            var Sexo = document.getElementById('Sexo').value;
+            var DatadeNascimento = document.getElementById('DatadeNascimento').value;
+            var NomedoPai = document.getElementById('NomedoPai').value;
+            var NomedaMae = document.getElementById('NomedaMae').value;
+            var Estadocivil = document.getElementById('Estadocivil').value;
+            var Naturalidade = document.getElementById('Naturalidade').value;
+            var Nacionalidade = document.getElementById('Nacionalidade').value;
+            var TelefoneResidencial = document.getElementById('TelefoneResidencial').value;
+            var TelefoneCelular = document.getElementById('TelefoneCelular').value;
+            var Logradouro = document.getElementById('Logradouro').value;
+            var Numero = document.getElementById('Numero').value;
+            var Complemento = document.getElementById('Complemento').value;
+            var CEP = document.getElementById('CEP').value;
+            var Bairro = document.getElementById('Bairro').value;
+            var Cidade = document.getElementById('Cidade').value;
+            var Estado = document.getElementById('Estado').value;
+            var Pais = document.getElementById('Pais').value;
 
-            var parametros = "nome =" + nome;
-            xhttp.open("GET","https://www.w3schools.com/action_page.php"+ parametros, true);
+
+            //inserir um ponto de interrogação + ATRIBUINDO A VARIAVEL PARAMETROS
+            var parametros = [ '?Nome=' +Nome+
+                '?CPF=' + CPF +
+                '?Identidade=' + Identidade +
+                '?Sexo=' + Sexo +
+                '?DatadeNascimento=' + DatadeNascimento +
+                '?NomedoPai=' + NomedoPai +
+                '?NomedaMae=' + NomedaMae +
+                '?Estadocivil=' + Estadocivil +
+                '?Naturalidade=' + Naturalidade +
+                '?Nacionalidade=' + Nacionalidade +
+                '?TelefoneResidencial=' + TelefoneResidencial +
+                '?TelefoneCelular=' + TelefoneCelular +
+                '?Logradouro=' + Logradouro +
+                '?Numero=' + Numero +
+                '?Complemento=' + Complemento +
+                '?CEP=' + CEP +
+                '?Bairro=' + Bairro +
+                '?Cidade=' + Cidade +
+                '?Estado=' + Estado +
+                '?Pais=' + Pais];
+
+            xhttp.open("GET", "https://www.w3schools.com/action_page.php" + parametros, true);
             xhttp.send();
         }
     </script>
