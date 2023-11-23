@@ -28,10 +28,12 @@ h2 {
     text-align: center;
 }
 
-
+#coluna{
+    margin-left: 6.25%;
+}
 
 img {
-    width: 300px;
+    width: 50%;
 }
 
     .col-1 {width: 6.25%;}
