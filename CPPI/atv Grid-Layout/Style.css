@@ -1,0 +1,44 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header,
+    .grid-container {
+    grid-template-columns: 90%;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    }
+}
+
+.coluna {
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #7a7a7a;
+    color: #ffffff;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+}
+
+#coluna{
+    margin-left: 6.25%;
+}
+
+img {
+    width: 50%;
+}
